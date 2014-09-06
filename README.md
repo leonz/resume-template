@@ -1,6 +1,6 @@
 ## LaTeX Resume Template
 
-I haven't been able to find a LaTeX resume template that I liked, so I created my own.  It's fairly basic, but that's a plus for readability.
+I haven't been able to find a LaTeX resume template that I liked, so I created my own.  It's fairly basic, but that's a plus for readability.  I've provided a sample.pdf for reference.
 
 Feel free to use and modify as you wish.  If you notice any errors, please help me out and submit a pull request.
 
