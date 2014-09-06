@@ -1,0 +1,61 @@
+%        File: resume.tex
+%      Author: Leon Zaruvinsky
+%     License: MIT License
+%     Created: Fri Sep 05 06:00 PM 2014 E
+% Last Change: Fri Sep 05 12:40 AM 2014 E
+%
+\documentclass{resume}
+
+\begin{document}
+\pagenumbering{gobble}
+
+\name{John A. Smith}
+
+\info{\href{mailto:john@example.com}{john@example.com}}{(555) 555-5555}{\href{http://twitter.com/}{@TwitterHandle}}{\href{http://github.com/}{GitHub.com/MyGitHub}}
+
+\section{Education}
+\subsectionp{Cornell University, College of Engineering}{}{Anticipated Graduation: May 2017}
+\desc{B.S. in Computer Science, GPA: X.XX \newline Dean's List}
+
+\subsection{Relevant Coursework}
+\desc{
+	Previous: Object Oriented Programming, Systems Programming, Discrete Structures \newline
+	Fall 2014: Operating Systems with Practicum, Networks, Digital Logic
+}
+
+\section{Personal Projects}
+
+\subsectionp{First Project}{Spring 2014}{View source: \url{http://github.com/}}
+\desc{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim turpis et tellus ultricies blandit.}
+
+\subsectionp{Second Project}{Spring 2014}{View source: \url{http://github.com/}}
+\desc{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim turpis et tellus ultricies blandit.}
+
+\subsectionp{Third Project}{Spring 2014}{View source: \url{http://github.com/}}
+\desc{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim turpis et tellus ultricies blandit.}
+
+\section{Work Experience}
+
+\subsectiond{My Job}{Spring 2014 - Present}
+\desc{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim turpis et tellus ultricies blandit.}
+
+\subsectiond{My Other Job}{Spring 2014 - Present}
+\desc{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim turpis et tellus ultricies blandit.}
+
+\section{Languages and Technology}
+
+\desc{
+	\begin{description}
+		\item[Most Experienced] Java, HTML/CSS
+		\item[Some Familiarity] JavaScript (Node.js), C, Android, MongoDB, \LaTeX
+	\end{description}
+}
+
+\section{Extracurricular Activities}
+
+\subsection{Something Fun I Did}
+\desc{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim turpis et tellus ultricies blandit.}
+
+\end{document}
+
+
