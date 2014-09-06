@@ -8,7 +8,15 @@ The files that I created are resume.tex and resume.cls.  The rest of the files a
 
 ## Installation
 
-Pull the entire directory as is, the supporting files are there for successful compilation. Any packages that are included but don't have an associated file were already on my system.  Because the template uses FontAwesome, you should use XeLaTeX (PDFLaTeX won't work).  
+Pull the entire directory as is, the supporting files are there for successful compilation. Any packages that are included but don't have an associated file were already on my system.  Because the template uses FontAwesome, you should use XeLaTeX (PDFLaTeX won't work).
+
+The only file that you need to edit is `resume.tex`.  The current file provides sample usage.
+
+When you're done, run this command in terminal (make sure XeLaTeX is installed first!):
+
+`xelatex resume.tex`
+
+A file `resume.pdf` will be created in the same directory.  That's it!
 
 ## License
 
