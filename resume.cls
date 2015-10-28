@@ -2,7 +2,7 @@
 %      Author: Leon Zaruvinsky
 %     License: MIT License
 %     Created: Fri Sep 05 06:00 PM 2014 E
-% Last Change: Fri Sep 06 12:23 AM 2014 E
+% Last Change: Tue Oct 28 1:43 AM 2015 E
 %
 
 \NeedsTeXFormat{LaTeX2e}
@@ -11,14 +11,21 @@
 \LoadClass{article}
 
 \RequirePackage{titlesec}
-\RequirePackage[margin=.5in]{geometry}
+\RequirePackage[
+    top = .3in,
+    bottom = .3in,
+    left = .5in,
+    right = .5in
+]{geometry}
 \RequirePackage{changepage}
 \RequirePackage[pdfborder={0 0 0}]{hyperref}
 \RequirePackage{fontspec}
 \RequirePackage{fontawesome}
+\RequirePackage{ragged2e}
+
 
 \newcommand{\name}[1]{
-	{\Huge\raggedright\bfseries #1}
+	{\huge\raggedright\bfseries #1}
 }
 \newcommand{\info}[4]{
 	\begin{figure}[h!]
@@ -32,13 +39,23 @@
 	\end{figure}
 }
 
+\newcommand{\infoflat}[4]{
+    \noindent \hspace{-1.5em} \begin{tabular}{lr}
+        {\name{#1}}
+        & {\begin{tabular}{l l l}
+            {\large \faEnvelope}  {\large #2} & {\large \faPhone}  {\large #3} & {\large \faGithub}  {\large #4}
+            \\
+        \end{tabular}}
+    \end{tabular}
+}
+
 \titlespacing*{\subsection}
-{0pt}{14pt plus 2pt minus 2pt}{0pt plus 2pt minus 2pt}
+{0pt}{14pt plus 2pt minus 2pt}{0pt plus 2pt minus 1pt}
 
 \titleformat{\section}
 	{\Large\bfseries\raggedright}
 	{}{0pt}
-	{}
+    {\vspace{-.3em}}[]
 
 \titleformat{\subsection}
 	{\large\bfseries\raggedright}

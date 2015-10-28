@@ -28,45 +28,81 @@
 %
 %
 
-
 \documentclass{resume}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{enumitem}
 
 \begin{document}
 \pagenumbering{gobble}
+\name{John Harvey}
 
-\name{Your Name}
+\info{\href{mailto:hello@email.com}{hello@email.com}}{800-555-1234}{\href{http://twitter.com/}{@Twitter}}{\href{http://github.com/}{GitHub.com/username}}
 
-% \info{Email}{Phone}{Twitter}{GitHub}
-% Only accepts 4 arguments
-% For other uses, icons can be changed in resume.cls
+\vspace{-1.5em}
+\section{Education}
+\subsectionp{University Name, College of Engineering}{City, State}{Expected May 2017}
+\desc{B.S. in Computer Science, Business minor, GPA 4.00}
 
-\info{\href{mailto:john@example.com}{john@example.com}}{(555) 555-5555}{\href{http://twitter.com/}{@TwitterHandle}}{\href{http://github.com/}{GitHub.com/MyGitHub}}
+\subsection{Selected Coursework}
+\hspace{12pt} \begin{tabularx}{\linewidth}{r X}
+    In Progress & Artificial Intelligence, Database Systems \\
+    Completed & Operating Systems + Practicum, Analysis of Algorithms, Data Structures \& Functional Programming, Systems Programming, Digital Logic, Discrete Structures, Object Oriented Programming
+\end{tabularx}
 
-\section{First Section}
+\vspace{-1em}
 
-% I use subsectionp with an empty Arg2 for the school so that
-% the date of graduation is right aligned
-\subsectionp{Name of School}{}{Date of Graduation}
-\desc{B.S. in Computer Science, GPA: X.XX}
+\section{Work Experience}
+
+\subsectionp{Software Engineering Intern, Company}{City, State}{Summer 2015}
+\desc{\begin{itemize}[leftmargin=*]
+    \setlength\itemsep{-.1em}
+    \item This is a standard format for a description.  No longer than one line per bullet.
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tincidunt quam, suspendisse.
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tincidunt quam, suspendisse.
+\end{itemize}}
+
+\subsectionp{Teaching Assistant}{}{Jan 2014 - Present}
+\desc{This is a slightly different format for a job description.}
+\hspace{3em} \begin{tabular}{l l}
+    CS 4410: Operating Systems & 1 Semester \\
+    CS 2110: Object Oriented Programming \& Data Structures \hspace{.5em} & 3 Semesters \\
+    \end{tabular}
 
 
-\section{Second Section}
+\subsectionp{Software Engineering Intern, Company}{City, State}{Summer 2014}
+\desc{\begin{itemize}[leftmargin=*]
+    \setlength\itemsep{-.1em}
+    \item This is a standard format for a description.  No longer than one line per bullet.
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tincidunt quam, suspendisse.
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tincidunt quam, suspendisse.
+\end{itemize}}
 
-\subsectiond{Dated Subsection}{Spring 2014 - Present}
-\desc{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim turpis et tellus ultricies blandit.  Nam nec dictum felis, at tristique orci.}
-
-\subsectionp{Another Subsection}{Date Here}{Source Code}
-\desc{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim turpis et tellus ultricies blandit.  Nam nec dictum felis, at tristique orci.}
-
-\section{A Section with a list}
+\section{Languages and Technologies}
 
 \desc{
 	\begin{description}
-		\item[List 1] Apples, Oranges
-		\item[List 2] Lettuce, Carrots, Celery
+		\item[Most Experienced] Java, Python, C, HTML/CSS
+		\item[Some Familiarity] OCaml, JavaScript (Node.js), Git, MySQL, MongoDB, Android, \LaTeX
 	\end{description}
 }
 
-\end{document}
+\section{Side Projects}
 
+\subsectionp{Cool Personal Project}{}{Source: \href{http://github.com/}{github.com/}}
+\desc{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tincidunt quam. Suspendisse neque felis, sagittis eget eros sed, feugiat aliquam nisl. In eu luctus nisl. In hac habitasse.}
+
+
+\subsectionp{A Hackathon Project}{BigRed//Hacks}{Source: \href{http://github.com/}{github.com/}}
+\desc{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tincidunt quam. Suspendisse neque felis, sagittis eget eros sed, feugiat aliquam nisl. In eu luctus nisl. In hac habitasse.}
+
+\subsectionp{Some Other Thing}{Summer 2014}{Source: \href{http://github.com}{github.com/}}
+\desc{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tincidunt quam. Suspendisse neque felis, sagittis eget eros sed, feugiat aliquam nisl. In eu luctus nisl. In hac habitasse.}
+
+\section{Extracurricular Activities}
+
+\subsectionp{A Committee or Club}{}{}
+\desc{This is the place to put something that isn't explicitly coding but is still relevant to software! E.g., member of school's CS Undergrad group or Women in Computing.}
+
+\end{document}
 
